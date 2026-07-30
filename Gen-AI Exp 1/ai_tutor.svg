@@ -1,0 +1,71 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#101C30"/>
+      <stop offset="100%" stop-color="#1A2C46"/>
+    </linearGradient>
+    <radialGradient id="orbGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2DD4BF" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#2DD4BF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bgGrad2)"/>
+
+  <!-- Ambient glow behind AI -->
+  <circle cx="560" cy="300" r="180" fill="url(#orbGlow)"/>
+
+  <!-- AI tutor as friendly orb/avatar -->
+  <g id="ai-avatar">
+    <circle cx="560" cy="290" r="90" fill="#0B1220" stroke="#2DD4BF" stroke-width="4"/>
+    <circle cx="560" cy="290" r="90" fill="none" stroke="#2DD4BF" stroke-width="1" opacity="0.4">
+      <animate attributeName="r" values="90;104;90" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0;0.4" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <!-- simple face: two eyes as soft rounded bars -->
+    <rect x="525" y="270" width="26" height="10" rx="5" fill="#2DD4BF"/>
+    <rect x="571" y="270" width="26" height="10" rx="5" fill="#2DD4BF"/>
+    <path d="M535 320 Q560 340 585 320" stroke="#2DD4BF" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <!-- orbit ring -->
+    <ellipse cx="560" cy="290" rx="130" ry="40" fill="none" stroke="#FBBF24" stroke-width="2" opacity="0.6"/>
+    <circle cx="690" cy="290" r="7" fill="#FBBF24"/>
+  </g>
+
+  <!-- Chat bubble from AI -->
+  <g id="bubble">
+    <rect x="430" y="120" width="200" height="70" rx="16" fill="#0B1220" stroke="#2DD4BF" stroke-width="2"/>
+    <path d="M470 190 l-16 22 l30 -14 Z" fill="#0B1220" stroke="#2DD4BF" stroke-width="2"/>
+    <rect x="450" y="140" width="160" height="8" rx="4" fill="#2DD4BF" opacity="0.8"/>
+    <rect x="450" y="158" width="120" height="8" rx="4" fill="#2DD4BF" opacity="0.5"/>
+  </g>
+
+  <!-- Student figure sitting with a book/tablet, looking at AI -->
+  <g id="student" transform="translate(120,230)">
+    <circle cx="90" cy="60" r="34" fill="#F2C9A0"/>
+    <!-- hair -->
+    <path d="M56 50 Q90 10 124 50 Q124 30 90 25 Q56 30 56 50Z" fill="#3B2A20"/>
+    <rect x="55" y="94" width="70" height="90" rx="18" fill="#E8734A"/>
+    <!-- arms holding tablet -->
+    <rect x="40" y="120" width="110" height="60" rx="10" fill="#0B1220" stroke="#FBBF24" stroke-width="2"/>
+    <rect x="50" y="128" width="90" height="44" rx="4" fill="#FBBF24" opacity="0.85"/>
+    <!-- legs -->
+    <rect x="60" y="184" width="24" height="60" rx="8" fill="#25384f"/>
+    <rect x="96" y="184" width="24" height="60" rx="8" fill="#25384f"/>
+  </g>
+
+  <!-- Connection line between student tablet and AI orb -->
+  <path d="M270 340 Q400 300 480 300" stroke="#FBBF24" stroke-width="2" fill="none" stroke-dasharray="6 6" opacity="0.7"/>
+
+  <!-- floating knowledge icons -->
+  <g fill="#2DD4BF" opacity="0.85">
+    <circle cx="200" cy="120" r="4"/>
+    <circle cx="240" cy="90" r="3"/>
+    <circle cx="700" cy="440" r="4"/>
+    <circle cx="660" cy="480" r="3"/>
+  </g>
+  <text x="200" y="150" font-family="Arial, sans-serif" font-size="20" fill="#2DD4BF" opacity="0.7">Σ</text>
+  <text x="700" y="150" font-family="Arial, sans-serif" font-size="22" fill="#FBBF24" opacity="0.7">✓</text>
+  <text x="130" y="470" font-family="Arial, sans-serif" font-size="22" fill="#2DD4BF" opacity="0.7">?</text>
+
+  <rect x="0" y="500" width="800" height="100" fill="#0B1220"/>
+  <text x="400" y="560" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#E8EEF5" font-weight="bold" letter-spacing="1">AI Tutor — Personalized Learning, Anytime</text>
+</svg>

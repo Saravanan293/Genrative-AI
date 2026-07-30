@@ -1,0 +1,97 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0A1220"/>
+      <stop offset="60%" stop-color="#132238"/>
+      <stop offset="100%" stop-color="#1D3352"/>
+    </linearGradient>
+    <linearGradient id="towerGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1C2E4A"/>
+      <stop offset="100%" stop-color="#0F1C2E"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#skyGrad)"/>
+
+  <!-- stars -->
+  <g fill="#E8EEF5">
+    <circle cx="60" cy="50" r="1.5"/>
+    <circle cx="120" cy="90" r="1"/>
+    <circle cx="700" cy="60" r="1.5"/>
+    <circle cx="650" cy="110" r="1"/>
+    <circle cx="400" cy="40" r="1"/>
+    <circle cx="300" cy="70" r="1.5"/>
+  </g>
+
+  <!-- moonlike glow orb representing AI network -->
+  <circle cx="650" cy="120" r="46" fill="#2DD4BF" opacity="0.15"/>
+  <circle cx="650" cy="120" r="30" fill="#2DD4BF" opacity="0.25"/>
+
+  <!-- ground -->
+  <rect x="0" y="520" width="800" height="80" fill="#0B1220"/>
+  <rect x="0" y="516" width="800" height="4" fill="#2DD4BF" opacity="0.6"/>
+
+  <!-- central futuristic tower / library -->
+  <polygon points="330,520 330,220 400,150 470,220 470,520" fill="url(#towerGrad)" stroke="#2DD4BF" stroke-width="2"/>
+  <!-- glowing windows grid -->
+  <g fill="#FBBF24" opacity="0.85">
+    <rect x="350" y="250" width="14" height="18" rx="2"/>
+    <rect x="380" y="250" width="14" height="18" rx="2"/>
+    <rect x="410" y="250" width="14" height="18" rx="2"/>
+    <rect x="440" y="250" width="14" height="18" rx="2"/>
+    <rect x="350" y="290" width="14" height="18" rx="2"/>
+    <rect x="410" y="290" width="14" height="18" rx="2"/>
+    <rect x="440" y="290" width="14" height="18" rx="2"/>
+    <rect x="380" y="330" width="14" height="18" rx="2"/>
+    <rect x="350" y="330" width="14" height="18" rx="2"/>
+    <rect x="440" y="330" width="14" height="18" rx="2"/>
+    <rect x="410" y="370" width="14" height="18" rx="2"/>
+    <rect x="350" y="370" width="14" height="18" rx="2"/>
+    <rect x="380" y="410" width="14" height="18" rx="2"/>
+    <rect x="440" y="410" width="14" height="18" rx="2"/>
+  </g>
+  <!-- top beacon -->
+  <circle cx="400" cy="150" r="8" fill="#2DD4BF"/>
+  <line x1="400" y1="150" x2="400" y2="110" stroke="#2DD4BF" stroke-width="2"/>
+
+  <!-- side satellite buildings -->
+  <rect x="150" y="380" width="120" height="140" fill="url(#towerGrad)" stroke="#2DD4BF" stroke-width="1.5"/>
+  <g fill="#2DD4BF" opacity="0.7">
+    <rect x="165" y="400" width="12" height="14"/>
+    <rect x="190" y="400" width="12" height="14"/>
+    <rect x="215" y="400" width="12" height="14"/>
+    <rect x="240" y="400" width="12" height="14"/>
+    <rect x="165" y="430" width="12" height="14"/>
+    <rect x="215" y="430" width="12" height="14"/>
+    <rect x="240" y="430" width="12" height="14"/>
+    <rect x="190" y="460" width="12" height="14"/>
+    <rect x="240" y="460" width="12" height="14"/>
+  </g>
+
+  <rect x="530" y="360" width="120" height="160" fill="url(#towerGrad)" stroke="#2DD4BF" stroke-width="1.5"/>
+  <g fill="#FBBF24" opacity="0.7">
+    <rect x="545" y="385" width="12" height="14"/>
+    <rect x="570" y="385" width="12" height="14"/>
+    <rect x="595" y="385" width="12" height="14"/>
+    <rect x="620" y="385" width="12" height="14"/>
+    <rect x="545" y="415" width="12" height="14"/>
+    <rect x="595" y="415" width="12" height="14"/>
+    <rect x="545" y="445" width="12" height="14"/>
+    <rect x="620" y="445" width="12" height="14"/>
+    <rect x="570" y="475" width="12" height="14"/>
+  </g>
+
+  <!-- floating drone / hologram data nodes connecting buildings -->
+  <path d="M270 430 Q300 380 350 380" stroke="#2DD4BF" stroke-width="1.5" fill="none" stroke-dasharray="5 5" opacity="0.7"/>
+  <path d="M470 380 Q500 350 530 400" stroke="#2DD4BF" stroke-width="1.5" fill="none" stroke-dasharray="5 5" opacity="0.7"/>
+  <circle cx="300" cy="395" r="5" fill="#FBBF24"/>
+  <circle cx="500" cy="365" r="5" fill="#FBBF24"/>
+
+  <!-- small flying campus shuttle -->
+  <g transform="translate(120,250)">
+    <ellipse cx="0" cy="0" rx="34" ry="10" fill="#0B1220" stroke="#2DD4BF" stroke-width="2"/>
+    <circle cx="-10" cy="-4" r="4" fill="#2DD4BF"/>
+    <circle cx="10" cy="-4" r="4" fill="#2DD4BF"/>
+  </g>
+
+  <text x="400" y="570" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#E8EEF5" font-weight="bold" letter-spacing="1">Future University — AI-Connected Campus</text>
+</svg>

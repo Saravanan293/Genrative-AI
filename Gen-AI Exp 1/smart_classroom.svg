@@ -1,0 +1,87 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0F1B2D"/>
+      <stop offset="100%" stop-color="#16273F"/>
+    </linearGradient>
+    <linearGradient id="screenGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2DD4BF"/>
+      <stop offset="100%" stop-color="#1AA8A0"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bgGrad)"/>
+
+  <!-- Floor -->
+  <rect x="0" y="470" width="800" height="130" fill="#111F33"/>
+  <rect x="0" y="470" width="800" height="4" fill="#25384f"/>
+
+  <!-- Smart board on wall -->
+  <rect x="230" y="70" width="340" height="200" rx="10" fill="#0B1220" stroke="#2DD4BF" stroke-width="3"/>
+  <rect x="248" y="88" width="304" height="164" rx="4" fill="url(#screenGrad)" opacity="0.9"/>
+  <!-- Board content: simple chart + AI icon -->
+  <circle cx="330" cy="150" r="26" fill="#0F1B2D" opacity="0.8"/>
+  <path d="M330 132 v18 l14 8" stroke="#E8EEF5" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <rect x="380" y="120" width="16" height="60" fill="#0F1B2D" opacity="0.7"/>
+  <rect x="405" y="140" width="16" height="40" fill="#0F1B2D" opacity="0.7"/>
+  <rect x="430" y="105" width="16" height="75" fill="#0F1B2D" opacity="0.7"/>
+  <rect x="455" y="130" width="16" height="50" fill="#0F1B2D" opacity="0.7"/>
+  <text x="400" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#0B1220" font-weight="bold">AI LEARNING DASHBOARD</text>
+  <!-- board stand -->
+  <rect x="390" y="270" width="20" height="20" fill="#25384f"/>
+
+  <!-- Ceiling sensor -->
+  <circle cx="150" cy="60" r="10" fill="#FBBF24"/>
+  <line x1="150" y1="60" x2="150" y2="20" stroke="#FBBF24" stroke-width="2"/>
+  <circle cx="150" cy="60" r="18" fill="none" stroke="#FBBF24" stroke-width="1.5" opacity="0.5"/>
+  <circle cx="150" cy="60" r="26" fill="none" stroke="#FBBF24" stroke-width="1" opacity="0.3"/>
+
+  <circle cx="660" cy="55" r="10" fill="#FBBF24"/>
+  <line x1="660" y1="55" x2="660" y2="20" stroke="#FBBF24" stroke-width="2"/>
+  <circle cx="660" cy="55" r="18" fill="none" stroke="#FBBF24" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Student desks with tablets, three students -->
+  <g id="desk1">
+    <rect x="90" y="400" width="130" height="14" rx="4" fill="#25384f"/>
+    <rect x="100" y="414" width="8" height="60" fill="#1b2a3f"/>
+    <rect x="200" y="414" width="8" height="60" fill="#1b2a3f"/>
+    <rect x="120" y="378" width="70" height="46" rx="6" fill="#0B1220" stroke="#2DD4BF" stroke-width="2"/>
+    <rect x="128" y="386" width="54" height="30" rx="2" fill="#2DD4BF" opacity="0.8"/>
+  </g>
+  <!-- simple student figure -->
+  <g id="stu1">
+    <circle cx="155" cy="345" r="18" fill="#F2C9A0"/>
+    <rect x="135" y="362" width="40" height="45" rx="10" fill="#E8734A"/>
+  </g>
+
+  <g id="desk2" transform="translate(230,10)">
+    <rect x="90" y="400" width="130" height="14" rx="4" fill="#25384f"/>
+    <rect x="100" y="414" width="8" height="60" fill="#1b2a3f"/>
+    <rect x="200" y="414" width="8" height="60" fill="#1b2a3f"/>
+    <rect x="120" y="378" width="70" height="46" rx="6" fill="#0B1220" stroke="#2DD4BF" stroke-width="2"/>
+    <rect x="128" y="386" width="54" height="30" rx="2" fill="#2DD4BF" opacity="0.8"/>
+  </g>
+  <g id="stu2" transform="translate(230,10)">
+    <circle cx="155" cy="345" r="18" fill="#C88E63"/>
+    <rect x="135" y="362" width="40" height="45" rx="10" fill="#3C7CA8"/>
+  </g>
+
+  <g id="desk3" transform="translate(460,-5)">
+    <rect x="90" y="400" width="130" height="14" rx="4" fill="#25384f"/>
+    <rect x="100" y="414" width="8" height="60" fill="#1b2a3f"/>
+    <rect x="200" y="414" width="8" height="60" fill="#1b2a3f"/>
+    <rect x="120" y="378" width="70" height="46" rx="6" fill="#0B1220" stroke="#2DD4BF" stroke-width="2"/>
+    <rect x="128" y="386" width="54" height="30" rx="2" fill="#2DD4BF" opacity="0.8"/>
+  </g>
+  <g id="stu3" transform="translate(460,-5)">
+    <circle cx="155" cy="345" r="18" fill="#E8B98C"/>
+    <rect x="135" y="362" width="40" height="45" rx="10" fill="#8B5FBF"/>
+  </g>
+
+  <!-- Floating data particles for "smart" feel -->
+  <circle cx="700" cy="150" r="4" fill="#FBBF24"/>
+  <circle cx="740" cy="200" r="3" fill="#2DD4BF"/>
+  <circle cx="60" cy="180" r="3" fill="#2DD4BF"/>
+  <circle cx="90" cy="230" r="4" fill="#FBBF24"/>
+
+  <text x="400" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#E8EEF5" font-weight="bold" letter-spacing="1">Smart Classroom</text>
+</svg>
